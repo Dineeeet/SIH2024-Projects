@@ -10,14 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
 
     <style>
-        p,
-        p class="title" {
-            font-family: "Poppins", sans-serif;
-        }
-
         p {
             color: rgb(163, 163, 163);
             font-size: 20px;
+            font-family: "Poppins", sans-serif;
         }
 
         #header {
@@ -27,24 +23,20 @@
             margin-bottom: 100px;
         }
 
-        .header-info-1{
-
-        }
-        
-        .header-info-1 img{
+        .header-info-1 img {
             height: 50px;
             border-right: 1px solid rgb(163, 163, 163);
             margin: 0px 6px;
         }
 
-        .header-info-2{
+        .header-info-2 {
             display: flex;
             align-items: center;
             gap: 10px;
 
         }
 
-        .header-info-2 input{
+        .header-info-2 input {
             height: 30px;
         }
 
@@ -109,8 +101,63 @@
             flex-direction: column;
         }
 
-        .tickmark img {
-            height: 2rem;
+        .tick-container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+        }
+
+        /* Hide the browser's default radio button */
+        .tick-container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Create a custom radio button */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .tick-container:hover input~.checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the radio button is checked, add a blue background */
+        .tick-container input:checked~.checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the indicator (dot/circle) when checked */
+        .tick-container input:checked~.checkmark:after {
+            display: block;
+        }
+
+        /* Style the indicator (dot/circle) */
+        .tick-container .checkmark:after {
+            top: 9px;
+            left: 9px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: white;
         }
 
         .button-next {
@@ -126,8 +173,7 @@
             border-radius: 9px;
 
             &:hover {
-                color: black;
-                background-color: blue;
+                background-color: rgb(38, 65, 63);
             }
         }
     </style>
@@ -420,7 +466,10 @@
                     <p>Already started your entrepreneurial journey as an idea or newly established business.</p>
                 </div>
                 <div class="tickmark">
-                    <img src="./assets/register-page/check-double-fill.svg" alt="">
+                    <label class="tick-container">
+                        <input type="radio" name="radio" id="Startup">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
             </div>
 
@@ -435,7 +484,10 @@
                         to the Startup India portal and complete your profile.</p>
                 </div>
                 <div class="tickmark">
-                    <img src="./assets/register-page/check-double-fill.svg" alt="">
+                        <label class="tick-container">
+                            <input type="radio" name="radio" id="MAARGMentor">
+                            <span class="checkmark"></span>
+                        </label>
                 </div>
             </div>
 
@@ -449,7 +501,10 @@
                     <p>If you just want to explore things. Like Blogs, Govt Schemes etc.</p>
                 </div>
                 <div class="tickmark">
-                    <img src="./assets/register-page/check-double-fill.svg" alt="">
+                        <label class="tick-container">
+                            <input type="radio" name="radio" id="Individual">
+                            <span class="checkmark"></span>
+                        </label>
                 </div>
             </div>
 
@@ -463,7 +518,10 @@
                     <p>A mentor may share with a mentee(or protege) information about</p>
                 </div>
                 <div class="tickmark">
-                    <img src="./assets/register-page/check-double-fill.svg" alt="">
+                    <label class="tick-container">
+                        <input type="radio" name="radio" id="Mentor">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
             </div>
 
@@ -478,7 +536,10 @@
                         funding, mentoring, training and other benefits</p>
                 </div>
                 <div class="tickmark">
-                    <img src="./assets/register-page/check-double-fill.svg" alt="">
+                    <label class="tick-container">
+                        <input type="radio" name="radio" id="Incubator">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
             </div>
 
@@ -493,7 +554,10 @@
                         connections, sales, mentorship, educational components</p>
                 </div>
                 <div class="tickmark">
-                    <img src="./assets/register-page/check-double-fill.svg" alt="">
+                    <label class="tick-container">
+                        <input type="radio" name="radio" id="Accelerator">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
             </div>
 
@@ -507,7 +571,10 @@
                     <p>An individual investor is a non-professional investor who buys and sells securities.</p>
                 </div>
                 <div class="tickmark">
-                    <img src="./assets/register-page/check-double-fill.svg" alt="">
+                    <label class="tick-container">
+                        <input type="radio" name="radio" id="Individual-Investor">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
             </div>
 
@@ -522,7 +589,10 @@
                         etc.</p>
                 </div>
                 <div class="tickmark">
-                    <img src="./assets/register-page/check-double-fill.svg" alt="">
+                    <label class="tick-container">
+                        <input type="radio" name="radio" id="Institutional-Investor">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
             </div>
 
@@ -537,7 +607,10 @@
                         carrying out startup initiatives can register under this category</p>
                 </div>
                 <div class="tickmark">
-                    <img src="./assets/register-page/check-double-fill.svg" alt="">
+                    <label class="tick-container">
+                        <input type="radio" name="radio" id="Government-Body">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
             </div>
 
@@ -552,7 +625,10 @@
                         startups by providing market access, resources, pilots and more.</p>
                 </div>
                 <div class="tickmark">
-                    <img src="./assets/register-page/check-double-fill.svg" alt="">
+                    <label class="tick-container">
+                        <input type="radio" name="radio" id="Corporate">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
             </div>
         </section>
