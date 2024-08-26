@@ -23,12 +23,12 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
     crossorigin="anonymous"
   />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <!-- <div class="top">
-            <div class="gov-logo"><img src="assets/images/India-portal-logo.jpg" alt=""></div>
+            <div class="gov-logo"><img src="assets/homepage/India-portal-logo.jpg" alt=""></div>
             <div class="top-option">
                 <a href="#">Translate</a>
             </div> -->
@@ -36,7 +36,7 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <div class="nav-logo">
-              <a class="navbar-brand" href="#"><img src="assets/images/logo.jpg" alt=""></a>
+              <a class="navbar-brand" href="#"><img src="assets/homepage/logo.jpg" alt=""></a>
             </div>
                 <div class="navbar-nav nav-option">
                   <a class="nav-link " aria-current="page" href="#">Home</a>
@@ -45,7 +45,7 @@
                   <a class="nav-link" href="#">Schemes</a>
                   <a class="nav-link" href="#">Help</a>
                   <a class="nav-link" href="#">Login</a>
-                  <a class="nav-link" href="#">Register</a>
+                  <a class="nav-link" href="register.html">Register</a>
                   
                 </div>
               </div>
@@ -60,8 +60,35 @@
     <main>
         <section class="page1">
             <div class="pg1 ">
-            <div class="pg-img"><img src="assets/images/frontpage2.png" alt=""></div>
-            <div class="pg-desc"><h3>India is a treasure trove of herbal plants, it is, in a way our Green Gold.</h3></div>
+            <div class="pg-img"><img src="assets/homepage/frontpage2.png" alt=""></div>
+            <div class="pg-slide">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="2000">
+                        <h3>India is a treasure trove of herbal plants, it is, in a way our Green Gold.</h3>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <div class="register">
+                        <h3>Register Your Startup</h3>
+                        <button>Register</button>
+                    </div>
+                      </div>
+                      <div class="carousel-item">
+                        <h3>Central Government Schemes </h3>
+                        <a href="#">Know more...</a>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <!-- <div class="pg-desc"><h3>India is a treasure trove of herbal plants, it is, in a way our Green Gold.</h3></div> -->
         </div>
     </section>
     <section class="page-2">
@@ -72,7 +99,7 @@
 <div class="serv-cards">
     <div class="card" >
         <div class="card-img">
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <img src="assets/homepage/a3.png" class="card-img-top" alt="...">
        </div>
        <div class="card-head"><h2>Ayurveda</h2></div>
         <div class="card-body">
@@ -81,7 +108,7 @@
       </div>
       <div class="card" >
         <div class="card-img">
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <img src="assets/homepage/y3.png" class="card-img-top" alt="...">
        </div>
        <div class="card-head"><h2>Yoga & Naturopathy</h2></div>
         <div class="card-body">
@@ -90,7 +117,7 @@
       </div>
       <div class="card" >
         <div class="card-img">
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <img src="assets/homepage/u3.png" class="card-img-top" alt="...">
        </div>
        <div class="card-head"><h2>Unani</h2></div>
         <div class="card-body">
@@ -99,7 +126,7 @@
       </div>
       <div class="card" >
         <div class="card-img">
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <img src="assets/homepage/s3.png" class="card-img-top" alt="...">
        </div>
        <div class="card-head"><h2>Siddha</h2></div>
         <div class="card-body">
@@ -108,7 +135,7 @@
       </div>
       <div class="card" >
         <div class="card-img">
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <img src="assets/homepage/sw3.png" class="card-img-top" alt="...">
        </div>
        <div class="card-head"><h2>Sowa Rigpa</h2></div>
         <div class="card-body">
@@ -117,7 +144,7 @@
       </div>
       <div class="card" >
         <div class="card-img">
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <img src="assets/homepage/h3.png" class="card-img-top" alt="...">
        </div>
        <div class="card-head"><h2>Homeopathy</h2></div>
         <div class="card-body">
@@ -130,31 +157,39 @@
     <section class="page-3">
         
         <div class="detail ayurveda">
-            <div class="detail-img"><img src="assets/images/ayurveda-root.png" alt=""></div>
+            <div class="detail-img"><img src="assets/homepage/ayurveda-root.png" alt=""></div>
             <div class="detail-des"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo perferendis ab quasi enim blanditiis magni ex deserunt optio doloremque ducimus recusandae, iure illum, iste temporibus maxime quaerat, voluptatum nostrum!
             </h4></div>
             
         </div>
         <div class="detail unani">
-            <div class="detail-img"><img src="assets/images/ayurveda-root.png" alt=""></div>
+            <div class="detail-img"><img src="assets/homepage/ayurveda-root.png" alt=""></div>
             <div class="detail-des"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo perferendis ab quasi enim blanditiis magni ex deserunt optio doloremque ducimus recusandae, iure illum, iste temporibus maxime quaerat, voluptatum nostrum!
             </h4></div>
             
         </div>
         <div class="detail ayurveda">
-            <div class="detail-img"><img src="assets/images/ayurveda-root.png" alt=""></div>
+            <div class="detail-img"><img src="assets/homepage/ayurveda-root.png" alt=""></div>
             <div class="detail-des"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo perferendis ab quasi enim blanditiis magni ex deserunt optio doloremque ducimus recusandae, iure illum, iste temporibus maxime quaerat, voluptatum nostrum!
             </h4></div>
             
         </div>
         <div class="detail unani">
-            <div class="detail-img"><img src="assets/images/ayurveda-root.png" alt=""></div>
+            <div class="detail-img"><img src="assets/homepage/ayurveda-root.png" alt=""></div>
             <div class="detail-des"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo perferendis ab quasi enim blanditiis magni ex deserunt optio doloremque ducimus recusandae, iure illum, iste temporibus maxime quaerat, voluptatum nostrum!
             </h4></div>
             
         </div>
     </section>
-    <section class="page-4"></section>  <!--media/youtube  -->
+    <section class="page-4">
+        <div class="media">
+            <div class="media-head"><h1>Webcast</h1></div>
+            <div class="media-video">
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/XL7ccvwEwdo?si=xQwZ8pVg3vWTRcIj">
+                </iframe>
+            </div>
+        </div>
+    </section>  <!--media/youtube  -->
     <section class="page-5">
         <div class="schemes-heading">
             <h1>Ayush Schemes</h1>
@@ -213,34 +248,99 @@
         <div class="about-body"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aspernatur voluptates impedit dolorum perspiciatis voluptas dicta quae alias blanditiis sunt tempore, earum, facilis quidem modi, ipsum ut. Possimus, eius nesciunt.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aspernatur voluptates impedit dolorum perspiciatis voluptas dicta quae alias blanditiis sunt tempore, earum, facilis quidem modi, ipsum ut. Possimus, eius nesciunt.</p></div>
    </div> 
 </section>
-<section class="page-7"></section> <!--FAQ -->
+<section class="page-7">
+    <div class="col-lg-6 faq">
+    <div class="faq-head"><h1>FAQ</h1></div>
+    <div class="faq-ques">
+    <div class="accordion accordion-flush faq-gap" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Who can Register?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              How to Register?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Schemes?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                What is Startup?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+               What is Ayush Sector?
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+      
+</div>
+<div class="news-letter">
+    <h2>Subscribe to NewsLetter</h2>
+    <input type="email"Placeholder="Enter your Email">
+    <button class="subscribe">Subscribe</button>
+</div></section> <!--FAQ -->
 
     </main>
     <footer class=" footer">
         <div class="foot">
+            <div class="gov-logo col-lg-3"> <img src="assets/homepage/India-portal-logo.jpg" alt=""></div>
+            <div class="foot-options row">
+            <div class="quick-links"><h3>Quick Links</h3></div>
             
-            <div class="col-lg-6 nav-options foot-options">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-
+            <div class="col-lg-3 f-options ">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#">About</a>
-
-            
-
             <a class="nav-link" href="#">Services</a>
+            
+            </div>
+            <div class="col-lg-2 f-options">
             <a class="nav-link" href="#">Schemes</a>
             <a class="nav-link" href="#">Help</a>
-
-            <a class="nav-link" href="#">Contact</a>
-            </div>
-            
-            <div class="col-lg-6 footer-icons">
-                
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-square-twitter"></i>
-                
-            </div>
+            <a class="nav-link" href="#">Contactus</a>
         </div>
+
+       </div>
+       <div class="col-lg-4 social-media">
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+       </div>
+    </div>
     </footer>
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

@@ -47,11 +47,40 @@ body{
     width: 100%;
     display: flex;
     justify-content:space-between;
-    align-items: center;
+   
 
   }
+  .pg-slide{
+    margin-top: 10rem;
+    width: 60%;
+    text-align: center;
+  }
+  
+.pg-slide .carousel-item button{
+padding: 10px 20px;
+background-color: red;
+color: #ffffff;
+font-size: 1.5rem;
+border: none;
+border-radius: 10px;
+width: 20%;
+
+  }
+  .register{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+   align-items: center;
+  }
+  
+  .pg-slide h3{
+
+    font-size: 3rem;
+  }
   .pg-img{
+    display: flex;
     width: 40%;
+    align-items: center;
 
   }
   .pg-img img{
@@ -77,8 +106,8 @@ width: 70%;}
     gap: 2rem;
   }
   .serv-cards .card{
-    width: 25%;
-    min-height:22rem;
+    width: 30%;
+    min-height:27rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -87,6 +116,16 @@ width: 70%;}
     cursor: pointer;
     
   }
+  .serv-cards .card-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .serv-cards .card img{
+    width: 25%;
+    
+  }
+
   .serv-cards .card h2{
     font-size: 1.2rem;
     font-weight: 600;
@@ -110,6 +149,18 @@ width: 70%;}
 .unani{
     flex-direction: row-reverse;
     justify-content: end;
+}
+
+.media-head h1{
+    
+    font-weight: 600;
+}
+.media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 .schemes-heading h1{
     text-align: center;
@@ -159,23 +210,105 @@ font-size: 1.5rem;
     margin: 3rem 0;;
     width: 70%;
 }
+.page-7{
+    display: flex;
+    padding: 3rem 4.5rem;
+}
+.faq{
+    min-height: 50vh;
+    
+}
+.faq-head h1{
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem;
+
+}
+.faq{
+    width: 60%;
+}
+.news-letter h2{
+    padding: 2rem;
+    font-weight: 600;
+}
+.news-letter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.news-letter input{
+    margin: 4rem 0;
+    width: 70%;
+    height: 3rem;
+
+}
+.news-letter button{
+    padding: 10px;
+    background-color: red;
+    border: none;
+    color: #ffffff;
+    border-radius: 10px;
+
+}
+/* .faq-ques{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+} */ 
+.faq-gap{
+    display: flex;
+    flex-direction: column;
+gap: 1rem;
+}
+.gov-logo{
+    display: flex;
+    align-items: center;
+}
 
 
 .foot{
+    border-top: #323232 1px solid;
     display: flex;
     padding: 1rem 4.5rem;
+   justify-content: center;
+    min-height: 30vh;
     
 }
 .foot-options{
     display: flex;
+    justify-content: center;
+}
+.quick-links h3{
+font-size: 1.5rem;
+font-weight: 600;
+text-align: center;
+padding-top: 1.2rem;
+}
+.f-options{
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
    
 }
 .foot a {
     font-size: 1.2rem;
     gap: 2rem;
 }
-
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+font-size: 3rem;
+cursor: pointer;
+}
 
 
   
