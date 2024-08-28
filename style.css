@@ -660,3 +660,114 @@ input.check-toggle-round-flat:checked+label:after {
   height: 50vh;
 }
 
+/* seed funding page */
+
+.info-section{
+  padding: 2rem 4.5rem;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 135vh;
+}
+
+.info-1{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.flow-ops-section{
+  padding: 2rem 4.5rem;
+}
+.flow{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flow-circles{
+  
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle{
+  border: 2px solid;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.features-section{
+  padding: 2rem 4.5rem;
+}
+
+.features{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.card{
+  width: 20vw;
+  height: 30vh;
+}
+
+.eligibilty-section{
+  padding: 2rem 4.5rem;
+}
+
+.eligibilty{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 90vh;
+  display: flex;
+  gap: 10px;
+}
+
+.eligibility-startup{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.funding-section{
+  padding: 2rem 4.5rem;
+}
+
+.funding{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apply{
+  display: flex;
+  gap: 20px;
+}
