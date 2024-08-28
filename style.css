@@ -316,7 +316,8 @@ input.check-toggle-round-flat:checked+label:after {
 }
 
 .schemes-body .card {
-  width: 25%;
+  width: 30%;
+  height: 10%;
   align-items: center;
   padding: 1rem 1.5rem;
 
