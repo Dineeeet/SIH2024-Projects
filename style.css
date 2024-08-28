@@ -474,33 +474,36 @@ input.check-toggle-round-flat:checked+label:after {
 }
 
 
-  
-  /* dASHBOARD CSS */
-  /* Dasboard navbar */
-  
-  .upper-navbar .navbar{
-    padding: 1rem 4.5rem;
-    display: flex;
-    justify-content: center;
-    
-  }
-  .lower-navbar nav{
-    padding: 0 4.5rem;
-  }
-  .upper-navbar .nav-items{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: ;
-  }
-  .upper-navbar .nav-items img{
-    width: 3rem;
-  }
-  
-  .search input{
-    height: 2rem;
-    border: #F36F25 2px solid;
-    padding: 5px;
+
+/* dASHBOARD CSS */
+/* Dasboard navbar */
+
+.upper-navbar .navbar {
+  padding: 1rem 4.5rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.lower-navbar nav {
+  padding: 0 4.5rem;
+}
+
+.upper-navbar .nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: ;
+}
+
+.upper-navbar .nav-items img {
+  width: 3rem;
+}
+
+.search input {
+  height: 2rem;
+  border: #F36F25 2px solid;
+  padding: 5px;
 
 }
 
@@ -529,94 +532,243 @@ input.check-toggle-round-flat:checked+label:after {
 
 }
 
-  .profile-section{
-    padding: 2rem 4.5rem;
-   
-  }
-  .profile{
-    display: flex;
-    gap: 4rem;
-align-items: center;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-border-radius: 20px;
-padding: 2rem;
-  }
+.profile-section {
+  padding: 2rem 4.5rem;
+
+}
+
+.profile {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.photo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.photo-section button {
+  border: none;
+  background-color: black;
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+#details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+#details h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#details p {
+  font-size: 1.4;
+  font-weight: 600;
+}
+
+.my-services-section {
+  padding: 2rem 4.5rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.services h1 {
+  font-weight: 700;
+}
+
+.services-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-body .card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.services .card-img {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.apply-btn button {
+  padding: 5px 10px;
+  border: none;
+  background-color: red;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.services .card img {
+  width: 25%;
+
+}
+
+.dashboard-foot {
+  margin-top: 3rem;
+}
+
+/* connection page */
+
+.banner-section {
+  padding: 2rem 4.5rem;
+}
+
+.banner {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 70vh;
+}
+
+.banner-images{
+  border: 2px solid black;
+  border-radius: 13px;
+  width: 30vw;
+  height: 50vh;
+}
+
+/* seed funding page */
+
+.info-section{
+  padding: 2rem 4.5rem;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 135vh;
+}
+
+.info-1{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.flow-ops-section{
+  padding: 2rem 4.5rem;
+}
+.flow{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flow-circles{
   
-  .photo-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   justify-content: center;
-   gap: 1.5rem;
-  }
-  .photo-section button{
-    border: none;
-    background-color: black;
-    color: #ffffff;
-    padding: 5px 12px;
-    border-radius: 20px;
-  }
-  #details{
-    display: flex;
-    align-items: center;
-   justify-content: space-between;
-    
-    
-  }
-  #details h3{
-    font-size: 1.5rem ;
-    font-weight: 600;
-  }
-  #details p{
-    font-size: 1.4;
-    font-weight: 600;
-  }
-  .my-services-section{
-    padding: 2rem 4.5rem;
-  }
-  .services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-  }
-  .services h1{
-    font-weight: 700;
-  }
-  .services-body{
-    display: flex;
-    flex-wrap: wrap;
-   gap: 3rem;
-   align-items: center;
-   justify-content: center;
-  }
-  .services-body .card{
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  .services .card-img{
-    display: flex;
-    justify-content: center;
-    
-   
-  }
-  .apply-btn button{
-    padding: 5px 10px;
-    border: none;
-    background-color: red;
-    border-radius: 20px;
-    color: #ffffff;
-  }
-  .services .card img{
-    width: 25%;
-    
-  }
-  .dashboard-foot{
-    margin-top: 3rem;
-  }
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle{
+  border: 2px solid;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.features-section{
+  padding: 2rem 4.5rem;
+}
+
+.features{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.card{
+  width: 20vw;
+  height: 30vh;
+}
+
+.eligibilty-section{
+  padding: 2rem 4.5rem;
+}
+
+.eligibilty{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 90vh;
+  display: flex;
+  gap: 10px;
+}
+
+.eligibility-startup{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.funding-section{
+  padding: 2rem 4.5rem;
+}
+
+.funding{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apply{
+  display: flex;
+  gap: 20px;
+}
